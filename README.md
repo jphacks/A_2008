@@ -1,5 +1,4 @@
-# サンプル（プロダクト名）
-どうぶつマスカレード
+# どうぶつマスカレード
 
 [![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2020/09/JPHACKS2020_ogp.jpg)](https://www.youtube.com/watch?v=G5rULR53uMk)
 
