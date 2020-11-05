@@ -1,20 +1,45 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
-  <title>SkyWayチュートリアル テスト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>どうぶつマスカレード　Demo</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 
 <body>
-  <video id="my-video" width="400px" autoplay muted playsinline></video>
-  <p id="my-id"></p>
-  <textarea id="their-id"></textarea>
-  <button id="make-call">発信</button>
-  <video id="their-video" width="400px" autoplay muted playsinline></video>
-
+  <div class="back-ground">
+  <div class="container">
+    <h1 class="heading">どうぶつマスカレード　Demo</h1>
+    <p class="note">
+      相手のIDを入力してください
+    </p>
+    <div class="p2p-media">
+      <div class="remote-stream">
+        <div class="video-mask">
+          <video id="js-remote-stream"></video>
+        </div>
+      </div>
+      <div class="local-stream">
+        <div class="video-mask">
+          <video id="js-local-stream"></video>
+        </div>
+        <p class="your-id">あなたのID: <span id="js-local-id"></span></p>
+        <input type="text" placeholder="Remote Peer ID" id="js-remote-id" size="40">
+        <button id="js-call-trigger" class="Button-style"><i class="fas fa-phone"></i> Call</button>
+        <button id="js-close-trigger" class="Button-style"><i class="fas fa-phone-slash"></i> Close</button>
+      </div>
+    </div>
+    <p class="meta" id="js-meta"></p>
+  </div>
+  </p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.67/Tone.js"
+    integrity="sha512-W3WpZZBLWKA4JxKtWzGqq2wZwWb/eYKINiCwDQIjeZqdzXhNAUNoSEllU2SkRpGIzCZGCZy55IczGAgIACXMBg=="
+    crossorigin="anonymous"></script>
+  <script src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+  <script src="./key.js"></script>
   <script src="./main.js"></script>
 </body>
 
