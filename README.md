@@ -27,6 +27,10 @@
 ### デモ動画
 https://youtu.be/nJ0Ke9BJDeU
 
+### デモプレイ
+https://jphacks.github.io/A_2008/main.html
+
+
 ## 開発技術
 ### 活用した技術
 #### API・データ
@@ -34,7 +38,7 @@ https://youtu.be/nJ0Ke9BJDeU
 * 
 
 #### フレームワーク・ライブラリ・モジュール
-* CDN
+* Tone.js
 * 
 
 #### デバイス
